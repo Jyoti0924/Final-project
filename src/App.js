@@ -2,24 +2,29 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import home from './components/pages/home';
-import about from './components/pages/about';
-import helpsupport from './components/pages/help&support';
-import signup from './components/pages/signup';
-import login from './components/pages/login';
-import termsconditions from './components/pages/terms&conditions';
+import Home from "./components/home/Home"
+import About from "./components/about/about"
+import Helpsupport from "./components/help&support/help&support"
+import Signup from "./components/signup/signup"
+import Login from "./components/login/login"
+import Termsconditions from "./components/terms&conditions/terms&conditions"
+import Team from "./components/team/team"
+import Rooms from './components/rooms/rooms';
   
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact component={home} />
-        <Route path='/about' component={about} />
-        <Route path='/help&support' component={helpsupport} />
-        <Route path='/signup' component={signup} />
-        <Route path='/login' component={login} />
-        <Route path='/terms&conditions' component={termsconditions} />
+        <Route path='/' exact element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/help&support' element={<Helpsupport/>} />
+        <Route path='/signup' element={<Signup/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/terms&conditions' element={<Termsconditions/>} />
+        <Route path='/team' element={<Team/>} />
+        <Route path='/rooms' element={<Rooms/>} />
+
       </Routes>
     </Router>
   );

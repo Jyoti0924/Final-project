@@ -1,0 +1,13 @@
+.signup-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;       
+
+    
+}
+@media screen and (max-width : 568px ) and ( min-width: 300px) {
+    .signup-main h1{
+        font-size: 10px;
+    }
+}

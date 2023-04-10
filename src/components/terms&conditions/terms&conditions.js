@@ -1,15 +1,9 @@
 import React from 'react';
+import "./terms&conditions.css"
   
 const termsconditions = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
+    <div className='termsconditions-main'>
       <h1>Terms & Conditions</h1>
     </div>
   );

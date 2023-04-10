@@ -1,17 +1,12 @@
 import React from 'react';
+import "./about.css"
   
 const about = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
+    <div className='about-main'>
       <h1>Welcome to the homerental website</h1>
     </div>
+    
   );
 };
   

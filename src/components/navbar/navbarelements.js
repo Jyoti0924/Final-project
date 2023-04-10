@@ -45,7 +45,7 @@ export const NavMenu = styled.div`
   align-items: center;
   margin-right: -24px;
   /* Second Nav */
-  /* margin-right: 24px; */
+   /* margin-right: 24px; 
   /* Third Nav */
   /* width: 100vw;
   white-space: nowrap; */
@@ -61,7 +61,7 @@ export const NavBtn = styled.nav`
   /* Third Nav */
   /* justify-content: flex-end;
   width: 100vw; */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 568px) {
     display: none;
   }
 `;
